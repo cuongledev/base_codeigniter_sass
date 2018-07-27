@@ -1,0 +1,307 @@
+#banner
+	.creative,
+	.small-text
+		font-family: $font-roboto
+		font-weight: bold
+		font-size: 52px
+		width: 100%
+		line-height: 45px
+		@media screen and (max-width : 767px)
+			font-size: 26px!important
+			line-height: 0px
+#about-us
+	#about
+		@media screen and (max-width : 767px)
+			background-size: auto
+		background-image: url('../images/eclip-right.png')
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: top 10px right
+#about-us
+	@media screen and (max-width : 767px)
+		background-size: auto
+	background-image: url('../images/eclip-left.png')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: bottom 10px left
+	padding-bottom: 25px
+	.light
+		font-weight: 500
+	.hr-linear
+		height: 25px
+		margin-bottom: 0
+		background: nth(nth(#e55a1c, 1), 1)
+		background: -webkit-linear-gradient(legacy-direction(#e10019), #e55a1c)
+		background: linear-gradient(#e10019, #e55a1c)
+	h4
+		font-family: $font-roboto
+		font-size: 18px
+	.light-title-bottom
+		color: $color-carrot!important
+		font-weight: bold
+	.box-title
+		text-align: -webkit-center
+		.hr-title-bottom
+			height: 3px
+			background-color: $color-pink
+			width: 100px
+	.description
+		color: $color-font
+#service-us
+	.service-container
+		position: relative
+	.light
+		font-weight: 700
+		color: $color-yellow!important
+		margin-top: 45px
+	.light-title-bottom
+		color: $color-black!important
+		font-weight: 400
+	.box-title
+		text-align: -webkit-center
+	.hr-title-bottom
+		height: 3px
+		background-color: $color-pink
+		width: 100px
+	.service-title
+		font-weight: 400
+		font-size: 22px
+		img
+			vertical-align: text-top
+	.service-des
+		color: $color-black
+	.customer-list-item
+		margin: 45px 0px
+	.list-customer .owl-stage
+		.item
+			border: 1px solid #ccc
+			img
+				width: 200px
+				height: 100px
+	.hr-linear-bottom
+		height: 15px
+		width: 100%
+		background-image: url('../images/bg-hr.png')
+		background-repeat: round
+		background-size: cover
+	.news
+		.item
+			.news-block
+				position: relative
+				overflow: hidden
+				.title-news
+					width: 100%
+					position: absolute
+					left: 0
+					right: 0
+					bottom: -45px
+					background-color: rgba(255, 178, 36, 0.76)
+					color: $color-white
+					text-align: left
+					padding-left: 10px
+					line-height: 45px
+					height: 45px
+					-moz-transition: all 0.45s ease
+					-webkit-transition: all 0.45s ease
+					-o-transition: all 0.45s ease
+					-ms-transition: all 0.45s ease
+					transition: all 0.45s ease
+					visibility: hidden
+					overflow: hidden
+					font-family: $font-roboto
+			.description-news
+				padding: 15px 0px
+				font-family: $font-roboto
+				font-style: italic
+				color: $color-font
+			&:hover .title-news
+				display: inline-block
+				visibility: visible
+				bottom: 0px
+#service-us
+	.owl-carousel-news
+		.owl-prev
+			display: block
+			width: 50px
+			height: 50px
+			text-align: center
+			line-height: 50px
+			top: 25%
+			left: -100px
+			position: absolute
+			.fa
+				font-size: 46px
+				color: #eb5e3e
+			@media screen and (max-width : 910px)
+				display: none!important
+		.owl-next
+			display: block
+			width: 50px
+			height: 50px
+			text-align: center
+			line-height: 50px
+			top: 25%
+			position: absolute
+			right: -100px
+			.fa
+				font-size: 46px
+				color: #eb5e3e
+			@media screen and (max-width : 910px)
+				display: none!important
+#portfolio
+	position: relative
+	.portfolio_list
+		list-style: none
+	.light
+		font-weight: 700
+		color: $color-yellow!important
+		margin-top: 45px
+	.light-title-bottom
+		color: $color-black!important
+		font-weight: 400
+	.box-title
+		text-align: -webkit-center
+	.hr-title-bottom
+		height: 3px
+		background-color: $color-pink
+		width: 100px
+#carrerr-us
+	position: relative
+	padding-bottom: 90px
+	.carrerr-left
+		position: absolute
+		z-index: 1
+		background-image: url('../images/carrerr-left.png')
+		background-repeat: no-repeat
+		background-size: contain
+		width: 100%
+		height: 100%
+	.carrerr-right
+		position: absolute
+		z-index: 1
+		background-image: url('../images/carrerr-right.png')
+		background-repeat: no-repeat
+		background-size: auto
+		@media screen and (max-width : 480px)
+			width: 100%
+		width: 20%
+		height: 100%
+		right: 0
+#carrerr-us
+	.title
+		padding: 35px 0px
+	.light
+		font-weight: 500
+		color: $color-yellow!important
+	h4
+		font-family: $font-roboto
+		font-size: 18px
+	.light-title-bottom
+		color: $color-black!important
+		font-weight: bold
+	.box-title
+		text-align: -webkit-center
+	.hr-title-bottom
+		height: 3px
+		background-color: $color-pink
+		width: 100px
+	.features
+		.carrerr-img
+			width: 100%
+		h4
+			border: 1px solid #ccc
+			padding: 15px
+			margin: 0px
+			font-size: 16px
+			font-weight: 400
+			color: $color-black
+		.desciption-carrerr
+			border-left: 1px solid #ccc
+			border-right: 1px solid #ccc
+			border-bottom: 1px solid #ccc
+			padding: 15px
+			font-style: italic
+			margin-bottom: 25px
+			z-index: 99999
+			position: relative
+			height: 180px
+			overflow-y: scroll
+			&::-webkit-scrollbar
+				width: 5px
+			&::-webkit-scrollbar-track
+				-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+				background-color: #F5F5F5
+				border-radius: 10px
+			&::-webkit-scrollbar-thumb
+				border-radius: 10px
+				background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(251, 184, 72)), color-stop(0.72, rgb(251, 184, 72)), color-stop(0.86, rgb(251, 184, 72)))
+		.apply-btn
+			z-index: 2
+			position: relative
+#map-us
+	.hr-linear-bottom
+		height: 15px
+		width: 100%
+		background-image: url('../images/bg-hr.png')
+		background-repeat: round
+		background-size: cover
+		margin-top: -6px
+#footer
+	.footer
+		background-color: #f8f8f8
+		padding: 50px 0px
+		.footer-left
+			.logo-footer
+				color: $color-black
+				font-family: $font-roboto
+				font-weight: 400
+				font-size: 14px
+				img
+					margin-right: 20px
+		.footer-descript
+			color: #999
+			font-family: $font-montserrat
+			padding: 35px 0px
+		.footer-social
+			color: #999
+			font-family: $font-montserrat
+			i
+				color: #ed7732
+				margin: 0px 5px
+		.footer-center
+			h4
+				font-family: $font-montserrat
+				font-weight: 600
+				font-size: 18px
+				padding-top: 15px
+				padding-bottom: 25px
+			a
+				@media screen and (max-width : 767px)
+					width: 100%
+					display: flex
+				color: $color-black
+		.footer-right
+			h4
+				font-family: $font-montserrat
+				font-weight: 600
+				font-size: 18px
+				padding-top: 15px
+				padding-bottom: 53px
+
+.back-to-top
+	background: #ec6d36
+	border-radius: 6px
+	bottom: 20px
+	color: #FFFFFF
+	display: block
+	font-size: 40px
+	height: 50px
+	line-height: 42px
+	position: fixed
+	right: 20px
+	text-align: center
+	width: 50px
+	z-index: 50
+	display: none
+	&:hover
+		color: #ffffff

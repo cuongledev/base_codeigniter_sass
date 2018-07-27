@@ -1,0 +1,43 @@
+.recruitment-page
+	.title-service
+		@media screen and (max-width : 768px)
+			line-height: 170px
+		line-height: 785px
+		color: $color-white!important
+		font-weight: bold
+	.recruitment-container
+		padding: 75px 0px
+		.detail-left
+			.item
+				h4
+					font-weight: bold
+					a
+						color: $color-black
+						font-size: 16px
+		.detail-right
+			.search-box
+				position: relative
+				.magnify
+					position: absolute
+					right: 10px
+					line-height: 35px
+				.search-box-recruitment
+					border-radius: 0px
+					&::placeholder
+						font-style: italic
+			.title-work
+				font-weight: bold
+				font-size: 22px
+			.list-group-item
+				margin-bottom: 10px
+				background-color: $color-default
+				&:first-child
+					border-top-left-radius: 0px
+					border-top-right-radius: 0px
+				&:last-child
+					border-bottom-right-radius: 0px
+					border-bottom-left-radius: 0px
+			.active
+				background-color: $color-block
+				color: $color-white
+				border: 1px solid $color-block

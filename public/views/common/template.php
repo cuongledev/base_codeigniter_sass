@@ -1,0 +1,9 @@
+<?php
+$this->load->view("common/header");
+?>
+                        <?php
+                            $this->load->view("$_load_content");
+                        ?>
+<?php
+$this->load->view("common/footer");
+?>

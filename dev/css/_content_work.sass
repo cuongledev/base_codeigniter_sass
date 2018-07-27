@@ -1,0 +1,38 @@
+.work-page
+	#news-work
+		background-image: url('../images/eclip-work-top.png')
+		background-repeat: no-repeat
+		background-size: auto
+		background-position: top -150px left
+	.news-work-container
+		background-image: url('../images/eclip-work-bottom.png')
+		background-repeat: no-repeat
+		background-size: auto
+		background-position: bottom -100px right
+	.title-service
+		@media screen and (max-width : 768px)
+			line-height: 170px
+		line-height: 785px
+		color: $color-white!important
+		font-weight: bold
+	.news-work-container
+		padding: 75px 0px
+		.pagi
+			padding-top: 35px
+		.list
+			margin-bottom: 50px
+			.detail-left
+				img
+					width: 100%
+					border-radius: 0px
+			&:last-child
+				margin-bottom: 0px
+			.detail-right
+				font-weight: 300
+				.title-work
+					@media screen and (max-width : 910px)
+						margin: 10px 0px 30px 0px
+					margin: -5px 0px 30px 0px
+					font-weight: bold
+					font-size: 28px
+

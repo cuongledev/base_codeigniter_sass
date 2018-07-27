@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} profile-image/([\w\d\-]{1,}\.\w{3})
+RewriteRule ^profile-image/([\w\d\-]{1,}\.\w{3})  /upload/users/$1 [L]
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]

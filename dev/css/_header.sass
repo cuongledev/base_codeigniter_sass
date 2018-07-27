@@ -1,0 +1,162 @@
+@import bourbon/bourbon
+@import _global
+.logo2
+	position: absolute
+	z-index: 1100
+	left: 0%
+	float: left
+	margin: 9px 0 0 0
+	cursor: pointer
+	max-width: 120px
+.menu-bar
+	position: absolute
+	top: 0
+	height: 64px
+	z-index: 1000
+	width: 100%
+	background: rgba(0,0,0,0)
+.navbar-default .navbar-collapse
+	@media screen and (max-width : 767px)
+		padding-left: 50px
+		background: #495a72
+		border: 1px solid #fff
+	.navbar-nav-custom
+		@media screen and (max-width : 767px)
+			width: 100%
+			padding: 30px 0px
+		li
+			a
+				@media screen and (max-width : 767px)
+					border-bottom: 1px solid #fff
+					padding: 15px 0px
+			&:hover
+				@media screen and (max-width : 767px)
+					border-bottom: none
+.navbar-default .navbar-nav
+	float: right
+	margin-right: 165px
+.navbar-default .navbar-nav > li > a
+	margin: 0px 10px
+	color: #ffffff
+	font-family: $font-montserrat
+	font-weight: normal
+	-webkit-transition: all 0.3s ease-out 0s
+	-moz-transition: all 0.3s ease-out 0s
+	-o-transition: all 0.3s ease-out 0s
+	transition: all 0.3s ease-out 0s
+	&:hover
+		color: $color-menu
+.navbar-nav-custom li a
+	&:before
+		content: ""
+		transform: scale(0, 1)
+		-webkit-transition: all 0.3s ease-out 0s
+		-moz-transition: all 0.3s ease-out 0s
+		-o-transition: all 0.3s ease-out 0s
+		transition: all 0.3s ease-out 0s
+		position: absolute
+		bottom: 0
+		height: 1px
+		background: $color-menu
+		width: 100%
+	&:hover:before
+		transform: scale(1)
+
+.navbar-default .navbar-nav > li.active > a
+	color: $color-menu
+	&:before
+		transform: scale(1)
+.navbar-nav-custom
+	.search-header
+		@media screen and (max-width : 767px)
+			position: relative
+		position: absolute
+		right: 0
+	li
+		.search-box-header
+			@media screen and (max-width : 767px)
+				float: right
+				right: 0px
+			position: relative
+			margin-top: 13px
+			width: 35px
+			.magnify
+				position: absolute
+				right: 10px
+				line-height: 35px
+				color: $color-white
+				z-index: 999
+			.input-search-header
+				border-radius: 0px
+				transform: scale(0,1)
+				-webkit-transition: all 0.3s ease-out 0s
+				-moz-transition: all 0.3s ease-out 0s
+				-o-transition: all 0.3s ease-out 0s
+				transition: all 0.3s ease-out 0s
+				&::placeholder
+					font-style: italic
+			&:hover
+				@media screen and (max-width : 767px)
+					right: 10px
+				cursor: pointer
+				width: 200px
+				.input-search-header
+					transform: scale(1)
+				.magnify
+					color: #3c3c3c!important
+.language
+	width: auto
+	display: inline-block
+	line-height: 59px
+	right: 35px
+	position: absolute
+	a
+		color: #fff
+		font-family: $font-montserrat
+		font-size: 15px
+	.current-open
+		&:after
+			content: "\f107"
+			font-family: "FontAwesome"
+			font-size: 17px
+			vertical-align: 0
+			padding-left: 5px
+			font-weight: bold
+	.dropdown
+		width: auto
+		display: inline-block
+	.dropdown-menu
+		border-radius: 0
+		border: none
+		top: 100%
+		left: 0
+		border-top: 2px solid $color-menu
+		transition: all 0.4s ease-out 0s
+		-webkit-transition: all 0.4s ease-out 0s
+		-o-transition: all 0.4s ease-out 0s
+		-ms-transition: all 0.4s ease-out 0s
+		opacity: 0
+		display: block
+		transform: translateY(50px)
+		-webkit-transform: translateY(50px)
+		-o-transform: translateY(50px)
+		-ms-transform: translateY(50px)
+		-khtml-transform: translateY(50px)
+		z-index: 0
+		visibility: hidden
+		margin-top: 0px
+		a
+			border: none
+			margin: 0
+			padding: 0
+			padding: 5px 10px
+	.open
+		.dropdown-menu
+			transform: translateY(0px)
+			-webkit-transform: translateY(0px)
+			-o-transform: translateY(0px)
+			-ms-transform: translateY(0px)
+			-khtml-transform: translateY(0px)
+			opacity: 1
+			z-index: 2
+			visibility: inherit
